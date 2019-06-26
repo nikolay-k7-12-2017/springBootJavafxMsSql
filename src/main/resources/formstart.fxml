@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="formJavaFx.ControllerFx">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="11.0" prefHeight="400.0" prefWidth="577.0" spacing="20.0">
+         <children>
+            <Label fx:id="label1" prefHeight="45.0" prefWidth="296.0" text="Label" />
+            <ListView fx:id="table1" prefHeight="137.0" prefWidth="517.0" />
+            <TableView fx:id="tableView1" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn prefWidth="299.0" text="C1" />
+                <TableColumn prefWidth="100.0" text="C2" />
+                  <TableColumn prefWidth="117.0" text="C3" />
+              </columns>
+            </TableView>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="30.0" right="30.0" />
+         </padding>
+      </VBox>
+   </children>
+</AnchorPane>

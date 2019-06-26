@@ -1,0 +1,48 @@
+plugins {
+    id 'org.springframework.boot' version '2.1.6.RELEASE'
+    id 'java'
+}
+
+apply plugin: 'io.spring.dependency-management'
+
+group = 'com.example'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+configurations {
+    developmentOnly
+    runtimeClasspath {
+        extendsFrom developmentOnly
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    
+  
+  
+
+    compile 'javax.servlet:javax.servlet-api:3.1.0'
+
+
+    compile group: 'org.springframework', name: 'spring-orm', version: '5.1.8.RELEASE'
+    compile group: 'javax.servlet', name: 'jstl', version: '1.2'
+    compile group: 'org.springframework', name: 'spring-jdbc', version: '5.1.8.RELEASE'
+
+    compile group: 'org.java-sql-generator', name: 'org.java-sql-generator.api', version: '0.3.2'
+    compile group: 'org.wildfly.swarm', name: 'javafx', version: '2018.5.0'
+  //  compile group: 'com.microsoft.sqlserver', name: 'sqljdbc_auth', version: '6.0.8112'
+    compile group: 'postgresql', name: 'postgresql', version: '9.1-901-1.jdbc4'
+
+
+    testCompile group: 'org.hsqldb', name: 'hsqldb', version: '2.5.0'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.1.6.RELEASE'
+    compile group: 'org.springframework.boot', name: 'spring-boot-autoconfigure', version: '2.1.6.RELEASE'
+
+ //   implementation 'org.springframework.boot:spring-boot-starter'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
